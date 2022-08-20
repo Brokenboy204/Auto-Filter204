@@ -26,7 +26,7 @@ logger.setLevel(logging.ERROR)
 BUTTONS = {}
 SPELL_CHECK = {}
 
-@Client.on_message(filters.text & ~filters.edited & filters.incoming)
+@Client.on_message(filters.group & filters.text & ~filters.edited & filters.incoming)
 async def give_filter(client,message):
     k = await manual_filters(client, message)
     if k == False:
@@ -396,12 +396,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('⚚ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 ʙᴏᴛ ᴜᴘᴅᴀᴛᴇs 💠', url='https://t.me/+H7Brn_NwwtFlZGRl'),     
-            InlineKeyboardButton('♻️ ʜᴇʟᴘ ♻️', callback_data='help')],[
-            InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ ♻️', callback_data='about'), 
-            InlineKeyboardButton('🔍sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''), ]]
+            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/AS_movie_request_group'),
+            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/+H7Brn_NwwtFlZGRl')
+            ],[      
+            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
+            InlineKeyboardButton('CONTACT ME', url='https://t.me/BeokenBoy204'),
+            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            ],[
+            InlineKeyboardButton('✅ SUBSCᏒIBΞ  ✅', url='https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA')
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -418,7 +423,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('CARBON', callback_data='carbon')
             ],[
             InlineKeyboardButton('🏠 𝗛𝗼𝗺𝗲 🏠', callback_data='start'),
-            InlineKeyboardButton('⚚ 𝗦𝘁𝗮𝘁s ⚚', callback_data='stats')
+            InlineKeyboardButton('⚚ 𝗦𝘁𝗮𝘁𝘀 ⚚', callback_data='stats')
         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -428,7 +433,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('♥️ SOURCE ♥️', url='https://github.com/Brokenboy204/Auto-Filter204')
+            InlineKeyboardButton('♥️ ᴘʀɪᴠᴀᴛᴇ ʙᴏᴛ ♥️', url='t.me/BrokenBoy204')
             ],[
             InlineKeyboardButton('🏠 𝗛𝗼𝗺𝗲 🏠', callback_data='start'),
             InlineKeyboardButton('🔐 𝗖𝗹𝗼𝘀𝗲 🔐', callback_data='close_data')
