@@ -398,14 +398,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/AS_movie_request_group'),
-            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/+H7Brn_NwwtFlZGRl')
+            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/Broken_Movies_Request_Group'),
+            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/Broken_movies204')
             ],[      
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('CONTACT ME', url='https://t.me/BrokenBoy204'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
             ],[
-            InlineKeyboardButton('Join Request Channel', url='https://t.me/AS_movie_request_group')
+            InlineKeyboardButton('Request Your Movie', url='https://t.me/+YZRWmAFSGvA1ODVl')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await query.message.edit_text(
