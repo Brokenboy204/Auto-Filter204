@@ -62,7 +62,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🔥 JOIИ CHAИИΞL 🔥", url='https://t.me/Broken_movies204')
+                    "🔥 JOIИ CHAИИΞL 🔥", url=invite_link.invite_link
                 )
             ]
         ]
