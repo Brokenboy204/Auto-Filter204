@@ -117,6 +117,8 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('Want Same Bot Contact me 👑', url='https://t.me/BrokenBoy204') ] ] ),
+
         )
                     
 
