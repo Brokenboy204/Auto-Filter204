@@ -399,13 +399,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/Broken_Movies_Request_Group'),
-            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/Broken_movies204')
+            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/Broken_Updatez_204')
             ],[      
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('CONTACT ME', url='https://t.me/BrokenBoy204'),
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
             ],[
-            InlineKeyboardButton('Request Your Movie', url='https://t.me/+YZRWmAFSGvA1ODVl')
+            InlineKeyboardButton('🚨 Backup 🚨', url='https://t.me/+_avmma1KMc04Y2Q1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await query.message.edit_text(
