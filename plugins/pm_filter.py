@@ -398,8 +398,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/Broken_Movies_Request_Group'),
-            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/Broken_Updatez_204')
+            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/TG_Movies_Request_Group'),
+            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/TG_Updates_204')
             ],[      
             InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
             InlineKeyboardButton('CONTACT ME', url='https://t.me/BrokenBoy204'),
